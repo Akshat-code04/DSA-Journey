@@ -33,21 +33,21 @@ Node* kReverse(Node* head, int k) {
 
     Node* prev = NULL;
     Node* curr = head;
-    Node* next = NULL;
+    Node* forward = NULL;
     int count = 0;
 
     // step 1: reverse the list from k steps 
     while( curr != NULL && count < k ){
-        next = curr -> next;
+        forward = curr -> next;
         curr -> next = prev;
         prev = curr;
-        curr = next;
+        curr = forward;
         count++;
     }
 
     // step 2: recursive case for remaining parts 
-    if( next != NULL){
-        head -> next = kReverse(next,k);
+    if( forward != NULL){
+        head -> next = kReverse(forward,k);
     }
     return prev;
 }
