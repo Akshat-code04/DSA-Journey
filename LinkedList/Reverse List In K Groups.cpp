@@ -1,4 +1,4 @@
-/**
+/***
  * Definition for singly-linked list.
  * class Node {
  * public:
