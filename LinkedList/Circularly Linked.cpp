@@ -1,5 +1,5 @@
 #include <bits/stdc++.h> 
-/*************************************************
+/**************************************************
         Following is the structure of class Node:
      
         class Node{
