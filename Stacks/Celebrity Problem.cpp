@@ -13,7 +13,7 @@ class Solution
             return false;
     }
     public:
-    //Function to find if there is a celebrity in the party or not.
+    
     int celebrity(vector<vector<int> >& M, int n) 
     {
         stack<int> s;
