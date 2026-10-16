@@ -5,7 +5,8 @@ class Solution {
         stack<int> s;
         s.push(-1);
         vector<int> ans(n);
-        
+
+        // for the next smaller element loop runs form right to left 
         for(int i=n-1; i>=0; i--){
             int curr = arr[i];
             while(s.top() != -1 && arr[s.top()] >= curr){
