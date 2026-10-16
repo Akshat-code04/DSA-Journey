@@ -42,7 +42,9 @@ class Solution {
         int area = INT_MIN;
         for(int i=0; i<n; i++){
             int l = heights[i];
-            
+
+            // if the next element of not present than take the size of next equals to number of columns
+          
             if(next[i] == -1){
                 next[i] = n;
             }
