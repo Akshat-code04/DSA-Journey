@@ -21,9 +21,11 @@ class Solution {
         stack<int> s;
         s.push(-1);
         vector<int> ans(n);
-        
+
+        // for the previous smaller element loop runs form left to right 
         for(int i=0; i<n; i++){
             int curr = arr[i];
+          
             while(s.top() != -1 && arr[s.top()] >= curr){
                 s.pop();
             }
