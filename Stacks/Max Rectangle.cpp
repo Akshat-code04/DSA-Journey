@@ -58,7 +58,8 @@ class Solution {
     
         int n = mat.size();       // Number of rows
         int m = mat[0].size();    // Number of columns
-        
+
+        // for the first row of the matric 
         int area = largestRectangleArea(mat[0], m);
         
         for(int i=1; i<n; i++){
