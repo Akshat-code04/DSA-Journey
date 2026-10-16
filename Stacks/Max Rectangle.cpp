@@ -65,6 +65,7 @@ class Solution {
         for(int i=1; i<n; i++){
             for(int j=0; j<m; j++){
                 if(mat[i][j] != 0){
+                    // Updated row - add the element of next row if it is non-zero 
                     mat[i][j] = mat[i][j] + mat[i-1][j];
                 }
                 else{
