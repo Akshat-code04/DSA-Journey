@@ -37,10 +37,11 @@ public:
     }
 
     int dequeue() {
-        // check if queue is empty
+        // check if queue is empty 
         if(qfront == rear){
             return -1;
         }
+        // if queue is not empty 
         else{
             int ans = arr[qfront];
             qfront++;
