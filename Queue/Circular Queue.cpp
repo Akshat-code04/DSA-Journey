@@ -57,7 +57,7 @@ class CircularQueue{
             front = 0;
         }
         
-        // normal flow 
+        // normal flow of the queue 
         else{
             front++;
         }
