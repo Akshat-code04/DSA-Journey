@@ -29,7 +29,7 @@ class CircularQueue{
         else if(rear == size-1 && front != 0){
             rear = 0;
         }
-        // normal flow
+        // normal flow of the queue
         else{
             rear++;
         }
