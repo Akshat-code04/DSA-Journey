@@ -30,7 +30,7 @@ public:
         if(rear == size){
             cout<<"Queue is full ";
         }
-        // if queue is not
+        // if queue is not full
         else{
             arr[rear] = data;
             rear++;
