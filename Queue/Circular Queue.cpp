@@ -33,9 +33,8 @@ class CircularQueue{
         else{
             rear++;
         }
-
+        // insert at rear 
         arr[rear] = value;
-
         return true;
        
     }
